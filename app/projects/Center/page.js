@@ -1,7 +1,6 @@
 "use client"
 import Image from "next/image"
 import Link from "next/link"
-import Link from "next/link"
 import { CalendarDays, MapPin, Users, Clock, ChevronDown, ChevronUp } from "lucide-react"
 import { useState } from "react"
 
