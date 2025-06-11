@@ -6,7 +6,7 @@ import { formatDate } from "lib/utils"
 import { Calendar, Clock, User, Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
 
 export default async function BlogPost({ params }) {
-  const slug = await params.slug
+  const slug = params.slug
   const result = await getBlogBySlug(slug)
   const blog = result.data
   
