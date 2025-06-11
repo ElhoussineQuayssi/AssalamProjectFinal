@@ -64,9 +64,7 @@ This project is a full-stack web application built with Next.js 13, designed for
 2. Install dependencies:
 
    ```bash
-   npm install
-   # or
-   pnpm install
+   npm install --legacy-peer-deps
    ```
 
 3. Configure environment variables:
