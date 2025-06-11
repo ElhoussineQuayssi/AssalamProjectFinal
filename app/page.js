@@ -64,7 +64,7 @@ export default async function Home() {
               <span className="text-red-500">Assalam</span> - Ensemble pour un avenir meilleur
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Une fondation marocaine dédiée à l'amélioration des conditions de vie, à l'éducation et au développement
+              Une fondation marocaine dédiée à l&apos;amélioration des conditions de vie, à l&apos;éducation et au développement
               durable au Maroc.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -203,8 +203,8 @@ export default async function Home() {
                 </div>
               </div>
               <p className="text-gray-700 italic">
-                "Grâce au projet Rayhana, j'ai pu retrouver ma dignité et subvenir aux besoins de mes enfants. Je suis
-                infiniment reconnaissante pour cette opportunité."
+                &ldquo;Grâce au projet Rayhana, j&apos;ai pu retrouver ma dignité et subvenir aux besoins de mes enfants. Je suis
+                infiniment reconnaissante pour cette opportunité.&rdquo;
               </p>
             </div>
 
@@ -218,9 +218,8 @@ export default async function Home() {
                   <p className="text-gray-600 text-sm">Bénéficiaire du projet Imtiaz</p>
                 </div>
               </div>
-              <p className="text-gray-700 italic">
-                "Le projet Imtiaz m'a permis de poursuivre mes études et de réaliser mon rêve de devenir ingénieur. Merci à la
-                Fondation Assalam pour son soutien."
+              <p className="text-gray-600">
+                Grâce au projet Imtiaz, j&apos;ai pu retrouver ma dignité.
               </p>
             </div>
           </div>

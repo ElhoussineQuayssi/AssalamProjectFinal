@@ -38,7 +38,10 @@ export default function EditAdmin() {
           setFormState({ status: "error", message: "Erreur lors de la récupération des administrateurs." })
         }
       } catch (error) {
-        setFormState({ status: "error", message: "Une erreur s'est produite." })
+        setFormState({ 
+          status: "error", 
+          message: `Une erreur s'est produite: ${error.message}` 
+        })
       }
     }
     fetchAdmin()
@@ -70,13 +73,16 @@ export default function EditAdmin() {
         setFormState({ status: "error", message: result.message || "Erreur lors de la mise à jour." })
       }
     } catch (error) {
-      setFormState({ status: "error", message: "Une erreur s'est produite." })
+      setFormState({ 
+        status: "error", 
+        message: `Une erreur s'est produite: ${error.message}` 
+      })
     }
   }
 
   return (
     <div className="p-8 max-w-lg mx-auto">
-      <h1 className="text-2xl font-bold mb-6">Modifier l'administrateur</h1>
+      <h1 className="text-2xl font-bold mb-6">Modifier l&apos;administrateur</h1>
 
       {formState.status === "error" && (
         <div className="bg-red-50 border border-red-200 text-red-800 rounded-lg p-4 mb-6">

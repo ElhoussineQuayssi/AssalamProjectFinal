@@ -1,4 +1,5 @@
 import { getBlogById } from "lib/actions"
+import Image from 'next/image'
 
 export default async function BlogPost({ params }) {
   const { id } = await params // Await params before destructuring
@@ -19,10 +20,13 @@ export default async function BlogPost({ params }) {
       <h1 className="text-3xl font-bold mb-4">{blog.title}</h1>
       <p className="text-sm text-gray-500 mb-6">Publié le {new Date(blog.createdAt).toLocaleDateString()}</p>
       <div className="mb-6">
-        <img
+        <Image
           src={blog.image || "/placeholder.jpg"}
           alt={blog.title}
-          className="w-full h-auto rounded-lg shadow"
+          width={1200}
+          height={630}
+          className="rounded-lg shadow"
+          priority
         />
       </div>
       <div

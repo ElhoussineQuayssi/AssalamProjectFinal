@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image'
 
 export default function NadiAssalamPage() {
   const project = {
@@ -39,10 +40,12 @@ export default function NadiAssalamPage() {
     <div className="container mx-auto px-4 py-16">
       {/* Hero Section */}
       <section className="relative h-96 rounded-xl overflow-hidden mb-12">
-        <img
+        <Image
           src={project.image}
           alt={project.title}
-          className="absolute inset-0 w-full h-full object-cover"
+          fill
+          className="object-cover"
+          priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute bottom-0 left-0 right-0 p-8">

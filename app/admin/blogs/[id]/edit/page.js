@@ -29,11 +29,12 @@ export default function EditBlog() {
           setFormState({ ...formState, status: "error", message: "Erreur lors de la récupération de l'article." })
         }
       } catch (error) {
+        console.error('Error fetching blog:', error);
         setFormState({ ...formState, status: "error", message: "Une erreur s'est produite." })
       }
     }
     fetchBlog()
-  }, [id])
+  }, [id, formState])
 
   const handleSubmit = async (event) => {
     event.preventDefault()
@@ -55,6 +56,7 @@ export default function EditBlog() {
         })
       }
     } catch (error) {
+      console.error('Error updating blog:', error);
       setFormState({
         ...formState,
         status: "error",
@@ -70,7 +72,7 @@ export default function EditBlog() {
   return (
     <div className="p-8">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-bold">Modifier l'article</h1>
+        <h1 className="text-2xl font-bold">Modifier l&apos;article</h1>
       </div>
 
       {formState.status === "error" && (
@@ -159,6 +161,37 @@ export default function EditBlog() {
               </select>
             </div>
 
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-3">Status</label>
+              <div className="flex items-center space-x-4">
+                <div className="flex items-center">
+                  <input
+                    id="status-published"
+                    name="status"
+                    type="radio"
+                    value="published"
+                    defaultChecked={blog.status === "published"}
+                    className="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <label htmlFor="status-published" className="ml-2 block text-sm text-gray-700">
+                    Publié
+                  </label>
+                </div>
+                <div className="flex items-center">
+                  <input
+                    id="status-draft"
+                    name="status"
+                    type="radio"
+                    value="draft"
+                    defaultChecked={blog.status === "draft"}
+                    className="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <label htmlFor="status-draft" className="ml-2 block text-sm text-gray-700">
+                    Brouillon
+                  </label>
+                </div>
+              </div>
+            </div>
 
             <div className="bg-blue-50 p-4 rounded-lg">
               <div className="flex items-center mb-4">

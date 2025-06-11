@@ -30,6 +30,7 @@ export default function NewAdmin() {
         })
       }
     } catch (error) {
+      console.error('Failed to create admin:', error)
       setFormState({
         ...formState,
         status: "error",

@@ -1,5 +1,4 @@
 "use client"
-import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { CalendarDays, MapPin, Users, Clock, ChevronDown, ChevronUp } from "lucide-react"
@@ -29,20 +28,20 @@ export default function ProjectPage() {
     content: [
       {
         heading: "Objectif général du projet",
-        text: "Le projet Imtiaz a pour mission d'accompagner les étudiants les plus brillants vivant en situation difficile ou issus de milieux défavorisés de manière générale jusqu'à leur insertion professionnelle. L'objectif principal étant d'insuffler un esprit d'appartenance et d'initiative en eux et les activer dans la réforme et le développement."
+        text: "Le projet Imtiaz a pour mission d&apos;accompagner les étudiants les plus brillants vivant en situation difficile ou issus de milieux défavorisés de manière générale jusqu&apos;à leur insertion professionnelle. L&apos;objectif principal étant d&apos;insuffler un esprit d&apos;appartenance et d&apos;initiative en eux et les activer dans la réforme et le développement."
       },
       {
         heading: "Notre vision",
-        text: "Nous visons à travers les différentes formations du projet d'élaborer le leader de demain : Un leader missionnaire engagé avec une bonne moralité, l'excellence académique, une bonne santé et une efficacité au sein de la famille et de la société."
+        text: "Nous visons à travers les différentes formations du projet d&apos;élaborer le leader de demain : Un leader missionnaire engagé avec une bonne moralité, l&apos;excellence académique, une bonne santé et une efficacité au sein de la famille et de la société."
       }
     ],
     goals: [
-      "Développer le niveau éducatif et l'aspect éthique des jeunes",
+      "Développer le niveau éducatif et l&apos;aspect éthique des jeunes",
       "Œuvrer pour leur inculquer les plus hautes valeurs humaines",
       "Développer les compétences éducatives, comportementales et relationnelles",
       "Enseigner des compétences pour interagir avec soi-même et avec les autres",
       "Autonomiser les jeunes à travers le coaching et des conseils individuels",
-      "Aider dans l'acquisition des besoins nécessaires des étudiants"
+      "Aider dans l&apos;acquisition des besoins nécessaires des étudiants"
     ],
     timeline: [
       {
@@ -65,7 +64,7 @@ export default function ProjectPage() {
         year: "2022",
         events: [
           "Atteinte de 100 bénéficiaires",
-          "Création du programme de bourses d'excellence",
+          "Création du programme de bourses d&apos;excellence",
           "Ouverture du centre de ressources pédagogiques"
         ]
       },
@@ -73,7 +72,7 @@ export default function ProjectPage() {
         year: "2023",
         events: [
           "150 étudiants accompagnés",
-          "Lancement de la plateforme d'e-learning",
+          "Lancement de la plateforme d&apos;e-learning",
           "Premier forum emploi dédié aux bénéficiaires"
         ]
       }
@@ -81,15 +80,15 @@ export default function ProjectPage() {
     faqs: [
       {
         question: "Comment postuler au programme Imtiaz?",
-        answer: "Les candidatures s'effectuent via notre plateforme en ligne pendant les périodes d'ouverture des candidatures (généralement entre septembre et novembre). Les candidats doivent soumettre leur dossier académique, une lettre de motivation et des informations sur leur situation sociale."
+        answer: "Les candidatures s&apos;effectuent via notre plateforme en ligne pendant les périodes d&apos;ouverture des candidatures (généralement entre septembre et novembre). Les candidats doivent soumettre leur dossier académique, une lettre de motivation et des informations sur leur situation sociale."
       },
       {
         question: "Quels types de soutien sont fournis?",
-        answer: "Le programme offre un soutien financier (bourse mensuelle), un accompagnement académique (tutorat, ressources pédagogiques), un développement personnel (formations, coaching) et une aide à l'insertion professionnelle (stages, réseautage)."
+        answer: "Le programme offre un soutien financier (bourse mensuelle), un accompagnement académique (tutorat, ressources pédagogiques), un développement personnel (formations, coaching) et une aide à l&apos;insertion professionnelle (stages, réseautage)."
       },
       {
         question: "Y a-t-il un engagement après les études?",
-        answer: "Nous encourageons les bénéficiaires à devenir à leur tour mentors pour les nouvelles générations, mais il n'y a pas d'obligation contractuelle. Notre philosophie est basée sur la volonté de redonner à la communauté."
+        answer: "Nous encourageons les bénéficiaires à devenir à leur tour mentors pour les nouvelles générations, mais il n'y a pas d&apos;obligation contractuelle. Notre philosophie est basée sur la volonté de redonner à la communauté."
       }
     ],
     testimonials: [
@@ -102,7 +101,7 @@ export default function ProjectPage() {
       {
         name: "Amina Belahcen",
         role: "Bénéficiaire 2022",
-        content: "En tant que fille d'une famille modeste, je n'aurais jamais pu avoir accès à toutes ces opportunités sans Imtiaz. Le mentorat m'a guidée dans mes choix de carrière, et aujourd'hui je prépare un master en ingénierie financière avec l'aide du programme.",
+        content: "En tant que fille d'une famille modeste, je n'aurais jamais pu avoir accès à toutes ces opportunités sans Imtiaz. Le mentorat m&apos;a guidée dans mes choix de carrière, et aujourd&apos;hui je prépare un master en ingénierie financière avec l'aide du programme.",
         shortContent: "En tant que fille d'une famille modeste, je n'aurais jamais pu avoir accès..."
       }
     ],
@@ -267,7 +266,7 @@ export default function ProjectPage() {
                   <div className="bg-green-100 text-green-600 rounded-full h-6 w-6 flex items-center justify-center flex-shrink-0 mt-0.5 mr-3">
                     ✓
                   </div>
-                  <p>Accompagnement pour l'accès au logement en cas de problèmes majeurs</p>
+                  <p>Accompagnement pour l&apos;accès au logement en cas de problèmes majeurs</p>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-green-100 text-green-600 rounded-full h-6 w-6 flex items-center justify-center flex-shrink-0 mt-0.5 mr-3">
@@ -332,6 +331,11 @@ export default function ProjectPage() {
                       <p className="text-gray-600">
                         {expandedTestimonial === index ? testimonial.content : testimonial.shortContent}
                       </p>
+                      <p className="text-gray-600">
+                        L&apos;objectif principal étant d&apos;insuffler un esprit d&apos;appartenance
+                      </p>
+                      <p>Grâce au programme, j&apos;ai pu développer mes compétences</p>
+                      <p>En tant qu&apos;étudiant, j&apos;ai reçu un soutien incroyable</p>
                       <button
                         onClick={() => toggleTestimonial(index)}
                         className="text-blue-600 text-sm mt-2 hover:underline focus:outline-none"
@@ -387,13 +391,13 @@ export default function ProjectPage() {
 
           {/* Eligibility Criteria */}
           <div className="bg-white rounded-lg shadow-md p-6">
-            <h3 className="text-xl font-bold mb-4">Critères d'éligibilité</h3>
+            <h3 className="text-xl font-bold mb-4">Critères d&apos;éligibilité</h3>
             <div className="space-y-4">
               <div className="bg-yellow-50 p-4 rounded-lg">
                 <h4 className="font-medium text-yellow-700 mb-2">Critère académique</h4>
                 <ul className="list-disc pl-5 space-y-1 text-sm">
                   <li>Excellence académique (notes élevées)</li>
-                  <li>Filière d'étude pertinente</li>
+                  <li>Filière d&apos;étude pertinente</li>
                   <li>Projet de vie clair et motivé</li>
                 </ul>
               </div>
@@ -401,7 +405,7 @@ export default function ProjectPage() {
                 <h4 className="font-medium text-purple-700 mb-2">Critère social</h4>
                 <ul className="list-disc pl-5 space-y-1 text-sm">
                   <li>Orphelins ou issus de structures de protection sociale</li>
-                  <li>Étudiants démunis en situation d'handicap</li>
+                  <li>Étudiants démunis en situation d&apos;handicap</li>
                   <li>Étudiants en situations difficiles (pauvreté, exclusion sociale, etc.)</li>
                 </ul>
               </div>

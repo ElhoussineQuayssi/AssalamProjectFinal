@@ -1,6 +1,6 @@
 "use client"
-import { notFound } from "next/navigation"
 import Image from "next/image"
+import Link from "next/link"
 import Link from "next/link"
 import { CalendarDays, MapPin, Users, Clock, ChevronDown, ChevronUp } from "lucide-react"
 import { useState } from "react"
@@ -32,7 +32,7 @@ export default function CentreHimayaPage() {
       }
     ],
     objectives: [
-      "Garantir des services d'accueil, d'écoute et d'orientation",
+      "Garantir des services d&apos;accueil, d&apos;écoute et d&apos;orientation",
       "Offrir des consultations psychologiques et juridiques",
       "Assurer une formation professionnelle adaptée",
       "Sensibiliser sur les droits des femmes",
@@ -237,7 +237,7 @@ export default function CentreHimayaPage() {
           <div className="bg-white rounded-lg shadow-md p-6 mb-8 sticky top-6">
             <h3 className="text-xl font-bold mb-6 text-center">Soutenez le Centre</h3>
             <p className="text-gray-600 mb-6 text-center">
-              Votre aide permet d'offrir un meilleur avenir aux femmes et enfants en difficulté
+              Votre aide permet d&apos;offrir un meilleur avenir aux femmes et enfants en difficulté
             </p>
             <Link
               href="/contact?type=donation"
@@ -288,6 +288,14 @@ export default function CentreHimayaPage() {
                   </svg>
                 </div>
                 <p>Familles en situation de précarité</p>
+              </div>
+              <div className="flex items-start">
+                <div className="bg-purple-100 text-purple-600 rounded-full h-5 w-5 flex items-center justify-center flex-shrink-0 mt-0.5 mr-3">
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <p>En tant que fille d&apos;une famille modeste, je n&apos;aurais jamais pu avoir accès à toutes ces opportunités sans l&apos;aide du centre.</p>
               </div>
             </div>
           </div>

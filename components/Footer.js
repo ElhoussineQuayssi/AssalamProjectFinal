@@ -23,7 +23,7 @@ export default function Footer() {
             </Link>
             <p className="text-blue-100 mb-6">
               La Fondation Assalam œuvre pour améliorer les conditions de vie au Maroc à travers des projets
-              d'éducation, de santé et de développement durable.
+              d&apos;éducation, de santé et de développement durable.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-blue-300 transition-colors">
@@ -89,7 +89,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/projects/environment" className="text-blue-100 hover:text-white transition-colors">
-                  Protection de l'Environnement
+                  Protection de l&apos;Environnement
                 </Link>
               </li>
               <li>
@@ -153,7 +153,7 @@ export default function Footer() {
           <p className="text-blue-200 text-sm">
             &copy; {new Date().getFullYear()} Fondation Assalam. Tous droits réservés.
           </p>
-          
+          <p>L&apos;équipe de la fondation Assalam</p>
         </div>
       </div>
     </footer>

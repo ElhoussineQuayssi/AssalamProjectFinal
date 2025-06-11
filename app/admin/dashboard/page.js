@@ -1,13 +1,11 @@
 "use client"
 
 import Link from "next/link"
-import { getStats, getAdmins, clearSession } from "lib/actions.js"
-import { getSession } from "lib/auth.js"
+import { getStats, getAdmins, clearSession } from "lib/actions"
+import { getSession } from "lib/auth" // Corrected import
 import { Users, FileText, Mail, Eye, ThumbsUp, ArrowUp, ArrowDown, LogOut } from "lucide-react"
 import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
-
-
 
 export default function Dashboard() {
   const router = useRouter()

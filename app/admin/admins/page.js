@@ -19,7 +19,7 @@ export default function AdminsPage() {
         } else {
           setError(result.message || "Erreur lors de la récupération des administrateurs.")
         }
-      } catch (err) {
+      } catch {
         setError("Une erreur s'est produite. Veuillez réessayer.")
       }
     }
@@ -42,7 +42,7 @@ export default function AdminsPage() {
         } else {
           alert(result.message || "Erreur lors de la suppression de l'administrateur.")
         }
-      } catch (err) {
+      } catch {
         alert("Une erreur s'est produite. Veuillez réessayer.")
       }
     }

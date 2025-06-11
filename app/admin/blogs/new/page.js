@@ -191,6 +191,37 @@ export default function NewBlog() {
               />
             </div>
 
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-3">Status</label>
+              <div className="flex items-center space-x-4">
+                <div className="flex items-center">
+                  <input
+                    id="status-published"
+                    name="status"
+                    type="radio"
+                    value="published"
+                    defaultChecked
+                    className="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <label htmlFor="status-published" className="ml-2 block text-sm text-gray-700">
+                    Publié
+                  </label>
+                </div>
+                <div className="flex items-center">
+                  <input
+                    id="status-draft"
+                    name="status"
+                    type="radio"
+                    value="draft"
+                    className="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <label htmlFor="status-draft" className="ml-2 block text-sm text-gray-700">
+                    Brouillon
+                  </label>
+                </div>
+              </div>
+            </div>
+
             <div className="bg-blue-50 p-4 rounded-lg">
               <div className="flex items-center mb-4">
                 <input

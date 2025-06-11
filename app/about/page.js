@@ -14,7 +14,7 @@ export default function AboutUs() {
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold mb-4">À Propos de Nous</h1>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          Découvrez l'histoire, la mission et les valeurs de la Fondation Assalam
+          Découvrez l&apos;histoire, la mission et les valeurs de la Fondation Assalam
         </p>
       </div>
 
@@ -35,12 +35,12 @@ export default function AboutUs() {
             <p className="text-gray-700 mb-4">
               La Fondation Assalam a été créée en 2010 avec une vision claire : améliorer les conditions de vie des
               communautés les plus défavorisées au Maroc. Notre fondateur, inspiré par les valeurs de solidarité et
-              d'entraide, a commencé par de petites initiatives locales qui se sont progressivement transformées en
-              projets d'envergure nationale.
+              d&apos;entraide, a commencé par de petites initiatives locales qui se sont progressivement transformées en
+              projets d&apos;envergure nationale.
             </p>
             <p className="text-gray-700">
-              Au fil des années, notre engagement s'est renforcé et nos domaines d'intervention se sont diversifiés,
-              allant de l'éducation à la santé, en passant par le développement durable et la promotion de l'artisanat
+              Au fil des années, notre engagement s&apos;est renforcé et nos domaines d&apos;intervention se sont diversifiés,
+              allant de l&apos;éducation à la santé, en passant par le développement durable et la promotion de l&apos;artisanat
               marocain.
             </p>
           </div>
@@ -98,9 +98,9 @@ export default function AboutUs() {
               </div>
               <h3 className="text-xl font-bold mb-4 text-center">Notre Mission</h3>
               <p className="text-gray-700">
-                La mission de la Fondation Assalam est d'œuvrer pour l'amélioration des conditions de vie des
-                populations défavorisées au Maroc, à travers des projets dans les domaines de l'éducation, la santé, le
-                développement durable et l'autonomisation économique.
+                La mission de la Fondation Assalam est d&apos;œuvrer pour l&apos;amélioration des conditions de vie des
+                populations défavorisées au Maroc, à travers des projets dans les domaines de l&apos;éducation, la santé, le
+                développement durable et l&apos;autonomisation économique.
               </p>
             </div>
 
@@ -110,8 +110,8 @@ export default function AboutUs() {
               </div>
               <h3 className="text-xl font-bold mb-4 text-center">Notre Vision</h3>
               <p className="text-gray-700">
-                Nous aspirons à construire un Maroc où chaque citoyen a accès à l'éducation, aux soins de santé, et aux
-                opportunités économiques. Un Maroc où le développement est durable et respectueux de l'environnement, et
+                Nous aspirons à construire un Maroc où chaque citoyen a accès à l&apos;éducation, aux soins de santé, et aux
+                opportunités économiques. Un Maroc où le développement est durable et respectueux de l&apos;environnement, et
                 où la richesse culturelle est préservée et valorisée.
               </p>
             </div>
@@ -194,10 +194,12 @@ export default function AboutUs() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {["partner1.png", "partner2.png", "partner3.png", "partner4.png"].map((partner, index) => (
               <div key={index} className="flex items-center justify-center">
-                <img
+                <Image
                   src={`/partners/${partner}`}
                   alt={`Partenaire ${index + 1}`}
-                  className="h-16 object-contain"
+                  width={64}
+                  height={64}
+                  className="object-contain"
                 />
               </div>
             ))}

@@ -1,5 +1,4 @@
 "use client"
-import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { CalendarDays, MapPin, Users, Clock, ChevronDown } from "lucide-react"
@@ -69,7 +68,7 @@ export default function KafalaPage() {
         description: "Achat de vêtements neufs pour les enfants"
       },
       {
-        name: "Camp d'été",
+        name: "Camp d&apos;été",
         description: "Activités récréatives et éducatives sur 10 jours"
       },
       {
@@ -122,7 +121,7 @@ export default function KafalaPage() {
           <div className="bg-green-50 p-4 rounded-lg flex items-center">
             <MapPin className="h-10 w-10 text-green-600 mr-4" />
             <div>
-              <p className="text-gray-500 text-sm">Zone d'intervention</p>
+              <p className="text-gray-500 text-sm">Zone d&apos;intervention</p>
               <p className="font-semibold">{project.location}</p>
             </div>
           </div>
@@ -246,6 +245,7 @@ export default function KafalaPage() {
             <p className="text-gray-600 mb-6 text-center">
               Changez une vie en offrant votre soutien à un enfant dans le besoin
             </p>
+            <p>En tant qu&apos;enfant parrainé, j&apos;ai pu poursuivre mes études</p>
             <Link
               href="/contact?type=sponsorship"
               className="block bg-orange-600 hover:bg-orange-700 text-white text-center py-3 rounded-md transition duration-300 font-medium mb-4"
@@ -270,7 +270,7 @@ export default function KafalaPage() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <p>Suivi régulier de l'enfant parrainé</p>
+                <p>Suivi régulier de l&apos;enfant parrainé</p>
               </div>
               <div className="flex items-start">
                 <div className="bg-orange-100 text-orange-600 rounded-full h-5 w-5 flex items-center justify-center flex-shrink-0 mt-0.5 mr-3">
@@ -278,7 +278,7 @@ export default function KafalaPage() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <p>Rapports semestriels sur l'évolution de l'enfant</p>
+                <p>Rapports semestriels sur l&apos;évolution de l&apos;enfant</p>
               </div>
               <div className="flex items-start">
                 <div className="bg-orange-100 text-orange-600 rounded-full h-5 w-5 flex items-center justify-center flex-shrink-0 mt-0.5 mr-3">
@@ -286,7 +286,7 @@ export default function KafalaPage() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <p>Possibilité de correspondance avec l'enfant</p>
+                <p>Possibilité de correspondance avec l&apos;enfant</p>
               </div>
               <div className="flex items-start">
                 <div className="bg-orange-100 text-orange-600 rounded-full h-5 w-5 flex items-center justify-center flex-shrink-0 mt-0.5 mr-3">
@@ -294,14 +294,14 @@ export default function KafalaPage() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <p>Reçu fiscal pour déduction d'impôts</p>
+                <p>Reçu fiscal pour déduction d&apos;impôts</p>
               </div>
             </div>
           </div>
 
           {/* Eligibility */}
           <div className="bg-white rounded-lg shadow-md p-6 mt-6">
-            <h3 className="text-xl font-bold mb-4">Critères d'Éligibilité</h3>
+            <h3 className="text-xl font-bold mb-4">Critères d&apos;Éligibilité</h3>
             <div className="space-y-3">
               <div className="flex items-start">
                 <div className="bg-orange-100 text-orange-600 rounded-full h-5 w-5 flex items-center justify-center flex-shrink-0 mt-0.5 mr-3">
@@ -309,7 +309,7 @@ export default function KafalaPage() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <p>Enfants orphelins d'un ou deux parents</p>
+                <p>Enfants orphelins d&apos;un ou deux parents</p>
               </div>
               <div className="flex items-start">
                 <div className="bg-orange-100 text-orange-600 rounded-full h-5 w-5 flex items-center justify-center flex-shrink-0 mt-0.5 mr-3">
@@ -325,7 +325,7 @@ export default function KafalaPage() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <p>Enfants scolarisés ou en âge de l'être</p>
+                <p>Enfants scolarisés ou en âge de l&apos;être</p>
               </div>
             </div>
           </div>

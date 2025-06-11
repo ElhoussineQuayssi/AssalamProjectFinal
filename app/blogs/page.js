@@ -39,7 +39,7 @@ export default async function Blogs({ searchParams }) {
           <div className="grid md:grid-cols-2 gap-8 items-center bg-white rounded-xl shadow-lg overflow-hidden">
             <div className="h-80 md:h-auto relative">
               <Image
-                src={paginatedBlogs[0].image || `/placeholder.svg?height=800&width=600`}
+                src={paginatedBlogs[0].image}
                 alt={paginatedBlogs[0].title}
                 fill
                 className="object-cover"
@@ -58,7 +58,7 @@ export default async function Blogs({ searchParams }) {
                 href={`/blogs/${paginatedBlogs[0].slug}`}
                 className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md transition-colors"
               >
-                Lire l'article
+                Lire l&apos;article
               </Link>
             </div>
           </div>

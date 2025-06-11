@@ -30,10 +30,18 @@ export default function Contact() {
         })
         event.target.reset()
       } else {
-        setFormState({ status: "error", message: result.message || "Une erreur s'est produite. Veuillez réessayer." })
+        setFormState({
+          ...formState,
+          status: "error",
+          message: result.message || "Une erreur s'est produite. Veuillez réessayer.",
+        })
       }
-    } catch (error) {
-      setFormState({ status: "error", message: "Une erreur s'est produite. Veuillez réessayer." })
+    } catch {
+      setFormState({
+        ...formState,
+        status: "error",
+        message: "Une erreur s'est produite. Veuillez réessayer.",
+      })
     }
   }
 
@@ -162,7 +170,7 @@ export default function Contact() {
             {type === "volunteer" && (
               <div className="mb-4">
                 <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="skills">
-                  Compétences / Domaines d'intérêt *
+                  Compétences / Domaines d&apos;intérêt *
                 </label>
                 <input
                   type="text"
@@ -230,7 +238,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <p className="font-medium">Heures d'ouverture:</p>
+                <p className="font-medium">Heures d&apos;ouverture:</p>
                 <p className="text-gray-600">Lundi - Vendredi: 9h00 - 17h00</p>
               </div>
             </div>

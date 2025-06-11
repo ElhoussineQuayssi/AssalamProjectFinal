@@ -1,5 +1,4 @@
 "use client"
-import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { CalendarDays, MapPin, Users, Clock } from "lucide-react"
@@ -214,7 +213,7 @@ export default function FataerAlBarakaPage() {
           <div className="bg-white rounded-lg shadow-md p-6 mb-8 sticky top-6">
             <h3 className="text-xl font-bold mb-6 text-center">Soutenez Notre Centre</h3>
             <p className="text-gray-600 mb-6 text-center">
-              Aidez-nous à offrir plus d'opportunités aux femmes en situation précaire
+              Aidez-nous à offrir plus d&apos;opportunités aux femmes en situation précaire
             </p>
             <Link
               href="/contact?type=donation"

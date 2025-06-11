@@ -26,7 +26,7 @@ export default function ViewMessage() {
           setError(result.message || "Erreur lors de la récupération du message.")
         }
       } catch (err) {
-        setError("Une erreur s'est produite. Veuillez réessayer.")
+        setError(`Une erreur s'est produite: ${err.message}. Veuillez réessayer.`)
       }
     }
     fetchMessage()

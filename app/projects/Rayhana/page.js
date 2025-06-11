@@ -1,12 +1,12 @@
-import { notFound } from "next/navigation"
+// import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { CalendarDays, MapPin, Users, Clock } from "lucide-react"
 
 export default function JardinEnfantsPage() {
   const project = {
-    title: "Jardin d'Enfants Rihana As-Salam",
-    excerpt: "Environnement éducatif et pédagogique sûr pour les enfants d'âge préscolaire",
+    title: "Jardin d&apos;Enfants Rihana As-Salam",
+    excerpt: "Environnement éducatif et pédagogique sûr pour les enfants d&apos;âge préscolaire",
     image: "/preschool.jpg",
     categories: ["Éducation", "Enfance", "Développement précoce"],
     startDate: "2013",
@@ -16,7 +16,7 @@ export default function JardinEnfantsPage() {
     content: [
       {
         heading: "Notre mission",
-        text: "Fournir un environnement éducatif et pédagogique sûr et inspirant pour les enfants d'âge préscolaire, tout en mettant l'accent sur le développement des compétences sociales, cognitives et émotionnelles."
+        text: "Fournir un environnement éducatif et pédagogique sûr et inspirant pour les enfants d&apos;âge préscolaire, tout en mettant l&apos;accent sur le développement des compétences sociales, cognitives et émotionnelles."
       }
     ],
     objectives: [
@@ -135,7 +135,7 @@ export default function JardinEnfantsPage() {
       {/* Main Content */}
       <section className="mb-12 grid md:grid-cols-3 gap-12">
         <div className="md:col-span-2">
-          <h2 className="text-2xl font-bold mb-6 text-green-700">À Propos du Jardin d'Enfants</h2>
+          <h2 className="text-2xl font-bold mb-6 text-green-700">À Propos du Jardin d&apos;Enfants</h2>
 
           <div className="prose prose-lg max-w-none prose-headings:text-green-700">
             {project.content.map((section, index) => (
@@ -225,10 +225,12 @@ export default function JardinEnfantsPage() {
         <div>
           {/* Support CTA */}
           <div className="bg-white rounded-lg shadow-md p-6 mb-8 sticky top-6">
-            <h3 className="text-xl font-bold mb-6 text-center">Soutenez Notre Jardin d'Enfants</h3>
+            <h3 className="text-xl font-bold mb-6 text-center">Soutenez Notre Jardin d&apos;Enfants</h3>
             <p className="text-gray-600 mb-6 text-center">
               Contribuez à offrir une éducation de qualité aux enfants défavorisés
             </p>
+            <p>Grâce à l&apos;aide de Rayhana, j&apos;ai pu développer mes compétences</p>
+            <p>L&apos;impact du projet sur ma vie a été considérable</p>
             <Link
               href="/contact?type=donation"
               className="block bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded-md transition duration-300 font-medium mb-4"
