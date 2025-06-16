@@ -9,7 +9,8 @@ export async function middleware(request) {
   // Protect admin routes
   if (pathname.startsWith('/admin') && !pathname.startsWith('/admin/login')) {
     if (!sessionCookie) {
-      const loginUrl = new URL('/admin/login', request.url)
+      const loginUrl = request.nextUrl.clone()
+      loginUrl.pathname = '/admin/login'
       return NextResponse.redirect(loginUrl)
     }
   }
