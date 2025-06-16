@@ -6,7 +6,7 @@ export default async function AdminLayout({ children }) {
 
   if (!session) {
     console.log("No session found, redirecting to login")
-    redirect("/login")
+    redirect("/admin/login")
   }
 
   return (
